@@ -297,7 +297,7 @@ function App() {
           }}
         >
           <Card
-            message={"sdkjf"}
+            message={"M2, your birthday is today,And it's in June not in May.But why we celebrating this holy event?It is because you are worth more than just a Cent.Oh Lord, you are the kindest person I know,Always caring and trying to help,And welp,You just have this very special glow.M2,We love you.\nHappy birthday."}
             name={"Mewo"}
             kaiyaStyle={italicTextStyle}
             image_link={
@@ -400,6 +400,22 @@ function App() {
         >
           <img
             src="https://cdn.discordapp.com/attachments/617357614338015275/1250525701640032386/image.png?ex=666b4250&is=6669f0d0&hm=26a8519566c3f0107afe4fdf30fccd5a03f793529da84d4a8e047ee87903cc0f&"
+            className="rounded-5 mb-4 mb-lg-0 shadow-2"
+            alt="woman avatar"
+            width="30%"
+          />
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={4.5}
+          speed={0.2}
+          style={{
+            ...alignCenter,
+            justifyContent: "flex-start",
+            marginLeft: "10%",
+          }}
+        >
+          <img
+            src="https://cdn.discordapp.com/attachments/617357614338015275/1250778757883625482/Screenshot_2024-06-13_171628.png?ex=666c2dfe&is=666adc7e&hm=5906666c3faacb95f453336b633a66fed11eaa96609618e07fa236de57fa793e&"
             className="rounded-5 mb-4 mb-lg-0 shadow-2"
             alt="woman avatar"
             width="30%"
