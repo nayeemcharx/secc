@@ -266,7 +266,7 @@ function App() {
           clas
         >
           <Card
-            message={"hehe hbd hehe"}
+            message={"hehe hbd hehe..(btw this is not kaiya speaking but there is an easter egg here find it uwu)"}
             name={"Kaiya"}
             kaiyaStyle={italicTextStyle}
             image_link={
