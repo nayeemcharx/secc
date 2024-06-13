@@ -13,7 +13,7 @@ export const Card = ({ message, name, kaiyaStyle, image_link }) => {
           width="90"
           height="90"
         />
-        <div className="flex-grow-1 ms-4 ps-3 col">
+        <div className="flex-grow-1 ms-4 ps-3 col me-4">
           <span style={italicTextStyle}>{message}</span>
           <br />
           <span className="blockquote-footer mb-0">{name}</span>

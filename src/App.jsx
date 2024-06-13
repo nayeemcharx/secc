@@ -233,7 +233,7 @@ function App() {
           style={{ ...alignCenter, justifyContent: "flex-start" }}
         >
           <Card
-            message={"(Cc:d)"}
+            message={"Happy birthday m2. btw did you know that grammarly hel~~~"}
             name={"Jack"}
             kaiyaStyle={italicTextStyle}
             image_link={
@@ -260,12 +260,13 @@ function App() {
           />
         </ParallaxLayer>
         <ParallaxLayer
+          onClick={() => { window.location.href = "https://bit.ly/ubiburthday24" }}
           sticky={{ start: 7, end: 8 }}
           style={{ ...alignCenter, justifyContent: "flex-start" }}
           clas
         >
           <Card
-            message={"sdkjf"}
+            message={"hehe hbd hehe"}
             name={"Kaiya"}
             kaiyaStyle={italicTextStyle}
             image_link={
@@ -281,7 +282,7 @@ function App() {
           }}
         >
           <Card
-            message={"sdkjf"}
+            message={"Happy birthday m200!!! I hope you're doing well and that life is treating as well as you've always treated everyone, and even if we don't talk much anymore I'll always think of you as one of the best friends I've ever had so I wish you a happy birthday and a happy life!"}
             name={"Neko"}
             kaiyaStyle={italicTextStyle}
             image_link={
@@ -365,7 +366,7 @@ function App() {
           }}
         >
           <Card
-            message={"sdkjf"}
+            message={"Happy birthday my friend, i'm hoping for you to have a great year, being healthy and blessed with sustenance in any way shape of form. It's a shame that I'm not as active as before but seeing you in the server having conversation with others made me happy. Hopefully we can catch up to each other soon enough, anyway, happy birthday again mate."}
             name={"Miyuki"}
             kaiyaStyle={italicTextStyle}
             image_link={
@@ -400,11 +401,9 @@ function App() {
         >
           <img
             src="https://cdn.discordapp.com/attachments/617357614338015275/1250525701640032386/image.png?ex=666b4250&is=6669f0d0&hm=26a8519566c3f0107afe4fdf30fccd5a03f793529da84d4a8e047ee87903cc0f&"
-            className="rounded-5 mb-4 mb-lg-0 shadow-2"
-            alt="woman avatar"
-            width="30%"
+            className="d-none d-lg-block rounded-5 w-30 mb-4 mb-lg-0 shadow-2"
           />
-        </ParallaxLayer>
+      </ParallaxLayer>
         <ParallaxLayer
           offset={4.5}
           speed={0.2}
@@ -412,13 +411,14 @@ function App() {
             ...alignCenter,
             justifyContent: "flex-start",
             marginLeft: "10%",
+       
           }}
         >
           <img
             src="https://cdn.discordapp.com/attachments/617357614338015275/1250778757883625482/Screenshot_2024-06-13_171628.png?ex=666c2dfe&is=666adc7e&hm=5906666c3faacb95f453336b633a66fed11eaa96609618e07fa236de57fa793e&"
-            className="rounded-5 mb-4 mb-lg-0 shadow-2"
+            className="d-none d-lg-block w-30 rounded-5 mb-4 mb-lg-0 shadow-2"
             alt="woman avatar"
-            width="30%"
+            
           />
         </ParallaxLayer>
         <ParallaxLayer
@@ -715,13 +715,15 @@ function App() {
           offset={1}
           speed={0.3}
           style={{
-            justifyContent: "flex-start",
-            marginLeft: "77%",
+
+            ...alignCenter,
+            justifyContent: "flex-end",
           }}
         >
           <img
             src="https://cdn.discordapp.com/attachments/617357614338015275/1250665443568386049/EvenCuterReimu.png?ex=666bc475&is=666a72f5&hm=a920c5d280d0aee2377d206a83723a57a845380a17e259a5378f2d7d7c93981a&"
             width="170"
+            className="me-5 p-3"
           />
         </ParallaxLayer>
         <ParallaxLayer
