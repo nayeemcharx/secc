@@ -233,7 +233,7 @@ function App() {
           style={{ ...alignCenter, justifyContent: "flex-start" }}
         >
           <Card
-            message={"Happy birthday m2. btw did you know that grammarly hel~~~"}
+            message={"Happy birthday c: I hope I can join your religion as a member and not a sacrifice 😔 Since we’re still getting to know each other, here's a fun fact about me: I'm really bad at coming up with birthday messages."}
             name={"Jack"}
             kaiyaStyle={italicTextStyle}
             image_link={
