@@ -8,18 +8,37 @@ import styles from "./styles.module.css";
 import { Card } from "./components/Card";
 import { ParallaxBackground } from "./components/ParallaxBackGround";
 
-const url = (name, wrap = false) =>
-  `${
-    wrap ? "url(" : ""
-  }https://awv3node-homepage.surge.sh/build/assets/${name}.svg${
-    wrap ? ")" : ""
-  }`;
+import LightBalloon from "./assets/LightBalloon.png";
+import GrayBalloon from "./assets/GrayBalloon.png"
+import HappyBirthday from "./assets/HappyBirthday.png"
+import CuteReimu from "./assets/CuteReimu.png";
+import CuterReimu from "./assets/EvenCuterReimu.png";
+import Hug from "./assets/m200Hug.png"
 
+import JackAvatar from "./avatars/Jack.webp"
+import FlameAvatar from "./avatars/Flame.webp"
+import KaiyaAvatar from "./avatars/Kaiya.webp"
+import NekoAvatar from "./avatars/Neko.webp"
+import MewoAvatar from "./avatars/Mewo.webp"
+import StomAvatar from "./avatars/Stom.webp"
+import AsaninAvatar from "./avatars/Asanin.webp"
+import LolAvatar from "./avatars/Lol.webp"
+import MiyukiAvatar from "./avatars/Miyuki.webp"
+import CharAvatar from "./avatars/Char.webp"
+
+import FlameScreenshot from "./screenshots/FlameScreenshot.png"
+import KaiyaScreenShot from "./screenshots/KaiyaScreenshot.png"
 function App() {
-  const src1 =
-    "https://i.imgur.com/NkiLyTo.png";
-  const src2 =
-  "https://i.imgur.com/Yan6wVl.png";
+
+  const url = (name, wrap = false) =>
+    `${
+      wrap ? "url(" : ""
+    }https://awv3node-homepage.surge.sh/build/assets/${name}.svg${
+      wrap ? ")" : ""
+    }`;
+  
+  const src1 =LightBalloon;
+  const src2 =GrayBalloon;
   const alignCenter = { display: "flex", alignItems: "center" };
 
   const italicTextStyle = {
@@ -41,7 +60,7 @@ function App() {
     { offset: 6, backgroundColor: "#5e2d88" },
     { offset: 9, backgroundColor: "#6f1754" },
     { offset: 12, backgroundColor: "#780c3a" },
-    { offset: 15, backgroundColor: "#800020" },
+    { offset: 15, backgroundColor: "#800c2f" },
     { offset: 18, backgroundColor: "#901525" },
     { offset: 21, backgroundColor: "#982027" },
     { offset: 24, backgroundColor: "#a02a29" },
@@ -221,7 +240,7 @@ function App() {
             }}
           >
             <img
-              src="https://i.imgur.com/1zmH1cB.png"
+              src={HappyBirthday}
               width="500"
               className="rounded-5 mb-4 mb-lg-0 shadow-2"
             />
@@ -236,9 +255,7 @@ function App() {
             message={"Happy birthday! I hope I can join your religion as a member and not a sacrifice 😔 Since we’re still getting to know each other, here's a fun fact about me.. I suck at coming up with birthday messages c:"}
             name={"Jack"}
             kaiyaStyle={italicTextStyle}
-            image_link={
-              "https://cdn.discordapp.com/avatars/477648390876954649/a_cbb332ed31721487f414df8f80e85942.webp"
-            }
+            image_link={JackAvatar}
           />
         </ParallaxLayer>
         <ParallaxLayer
@@ -255,7 +272,7 @@ function App() {
             name={"FlameOnMe"}
             kaiyaStyle={italicTextStyle}
             image_link={
-              "https://cdn.discordapp.com/avatars/412497058721693735/c25fd05e24cf9fb3026a2ab43cbf43ab.webp"
+              FlameAvatar
             }
           />
         </ParallaxLayer>
@@ -270,7 +287,7 @@ function App() {
             name={"Kaiya"}
             kaiyaStyle={italicTextStyle}
             image_link={
-              "https://i.imgur.com/QtHw69x.png"
+              KaiyaAvatar
             }
           />
         </ParallaxLayer>
@@ -286,7 +303,7 @@ function App() {
             name={"Neko"}
             kaiyaStyle={italicTextStyle}
             image_link={
-              "https://cdn.discordapp.com/avatars/520732301747945492/c7c76ac8083f8e6695bd49d6820f6ddf.webp"
+              NekoAvatar
             }
           />
         </ParallaxLayer>
@@ -302,7 +319,7 @@ function App() {
             name={"Mewo"}
             kaiyaStyle={italicTextStyle}
             image_link={
-              "https://cdn.discordapp.com/avatars/567761794685206531/6cf420350d1bcb31ff8068cf1538b039.webp"
+              MewoAvatar
             }
           />
         </ParallaxLayer>
@@ -320,7 +337,7 @@ function App() {
             name={"Stompral"}
             kaiyaStyle={italicTextStyle}
             image_link={
-              "https://cdn.discordapp.com/avatars/528745155260448799/c8712e0032caaf6e949a8879f01ee429.webp"
+              StomAvatar
             }
           />
         </ParallaxLayer>
@@ -336,7 +353,7 @@ function App() {
             name={"Asanin"}
             kaiyaStyle={italicTextStyle}
             image_link={
-              "https://cdn.discordapp.com/avatars/198713931131256834/a7d29ce2d48eb4135956a51c1fa3c194.webp"
+              AsaninAvatar
             }
           />
         </ParallaxLayer>
@@ -354,7 +371,7 @@ function App() {
             name={"Lol3270"}
             kaiyaStyle={italicTextStyle}
             image_link={
-              "https://cdn.discordapp.com/avatars/763164437053702144/617e926983c81c0d1a0f88c3e0bb4a15.webp"
+              LolAvatar
             }
           />
         </ParallaxLayer>
@@ -370,7 +387,7 @@ function App() {
             name={"Miyuki"}
             kaiyaStyle={italicTextStyle}
             image_link={
-              "https://cdn.discordapp.com/avatars/979007861118079006/0491dd2221f70b9643c46463a68cddff.webp"
+              MiyukiAvatar
             }
           />
         </ParallaxLayer>
@@ -386,8 +403,24 @@ function App() {
             name={"monke"}
             kaiyaStyle={italicTextStyle}
             image_link={
-              "https://cdn.discordapp.com/avatars/580434477721976875/0db87f17c0744a39b6c5aa8a591a5a2b.webp"
+              CharAvatar
             }
+          />
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={4.5}
+          speed={0.2}
+          style={{
+            ...alignCenter,
+            justifyContent: "flex-start",
+            marginLeft: "10%",
+       
+          }}
+        >
+          <img
+            src={FlameScreenshot}
+            className="d-none d-lg-block w-30 rounded-5 mb-4 mb-lg-0 shadow-2"
+            
           />
         </ParallaxLayer>
         <ParallaxLayer
@@ -400,27 +433,11 @@ function App() {
           }}
         >
           <img
-            src="https://i.imgur.com/Ni0avhf.png"
+            src={KaiyaScreenShot}
             className="d-none d-lg-block rounded-5 w-30 mb-4 mb-lg-0 shadow-2"
           />
       </ParallaxLayer>
-        <ParallaxLayer
-          offset={4.5}
-          speed={0.2}
-          style={{
-            ...alignCenter,
-            justifyContent: "flex-start",
-            marginLeft: "10%",
        
-          }}
-        >
-          <img
-            src="https://i.imgur.com/CEXg6Ho.png"
-            className="d-none d-lg-block w-30 rounded-5 mb-4 mb-lg-0 shadow-2"
-            alt="woman avatar"
-            
-          />
-        </ParallaxLayer>
         <ParallaxLayer
           offset={0.4}
           speed={0.5}
@@ -431,7 +448,7 @@ function App() {
           }}
         >
           <img
-            src="https://cdn.discordapp.com/attachments/617357614338015275/1250665444487204894/AirBalloonFilled.png?ex=666bc476&is=666a72f6&hm=35e7f46e3fc93ca803533f6e67673f3af8c7d11dad0413324674b1b3b5b90b42&"
+            src={src2}
             width="200"
           />
         </ParallaxLayer>
@@ -444,7 +461,7 @@ function App() {
           }}
         >
           <img
-            src="https://i.imgur.com/VuiSPoE.png"
+            src={Hug}
             width="140"
           />
         </ParallaxLayer>
@@ -721,7 +738,7 @@ function App() {
           }}
         >
           <img
-            src="https://i.imgur.com/NmTfo0S.png"
+            src={CuterReimu}
             width="170"
             className="me-5 p-3"
           />
@@ -735,7 +752,7 @@ function App() {
           }}
         >
           <img
-            src="https://i.imgur.com/ljvmPII.png"
+            src={CuteReimu}
             width="150"
           />
         </ParallaxLayer>
