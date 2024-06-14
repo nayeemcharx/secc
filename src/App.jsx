@@ -17,9 +17,9 @@ const url = (name, wrap = false) =>
 
 function App() {
   const src1 =
-    "https://cdn.discordapp.com/attachments/617357614338015275/1250665444487204894/AirBalloonFilled.png?ex=666bc476&is=666a72f6&hm=35e7f46e3fc93ca803533f6e67673f3af8c7d11dad0413324674b1b3b5b90b42&";
+    "https://i.imgur.com/NkiLyTo.png";
   const src2 =
-    "https://cdn.discordapp.com/attachments/617357614338015275/1250665444227026995/AirBalloon.png?ex=666bc476&is=666a72f6&hm=70577bcb8f05c46c8f50504e2b418f0ff521a37287a76dc6c7c3711e9b753e08&";
+  "https://i.imgur.com/Yan6wVl.png";
   const alignCenter = { display: "flex", alignItems: "center" };
 
   const italicTextStyle = {
@@ -221,7 +221,7 @@ function App() {
             }}
           >
             <img
-              src="https://cdn.discordapp.com/attachments/617357614338015275/1250663545369137233/HappyBirthday_illustration.png?ex=666bc2b1&is=666a7131&hm=401c20812feea793ed71485421f4fadf2c0342db94daa26098c2a2145bb4946e&"
+              src="https://i.imgur.com/1zmH1cB.png"
               width="500"
               className="rounded-5 mb-4 mb-lg-0 shadow-2"
             />
@@ -270,7 +270,7 @@ function App() {
             name={"Kaiya"}
             kaiyaStyle={italicTextStyle}
             image_link={
-              "https://cdn.discordapp.com/avatars/423048688987013136/cb598e4e070b7df55c5ebcc0915b29d7.webp"
+              "https://i.imgur.com/QtHw69x.png"
             }
           />
         </ParallaxLayer>
@@ -400,7 +400,7 @@ function App() {
           }}
         >
           <img
-            src="https://cdn.discordapp.com/attachments/617357614338015275/1250525701640032386/image.png?ex=666b4250&is=6669f0d0&hm=26a8519566c3f0107afe4fdf30fccd5a03f793529da84d4a8e047ee87903cc0f&"
+            src="https://i.imgur.com/Ni0avhf.png"
             className="d-none d-lg-block rounded-5 w-30 mb-4 mb-lg-0 shadow-2"
           />
       </ParallaxLayer>
@@ -415,7 +415,7 @@ function App() {
           }}
         >
           <img
-            src="https://cdn.discordapp.com/attachments/617357614338015275/1250778757883625482/Screenshot_2024-06-13_171628.png?ex=666c2dfe&is=666adc7e&hm=5906666c3faacb95f453336b633a66fed11eaa96609618e07fa236de57fa793e&"
+            src="https://i.imgur.com/CEXg6Ho.png"
             className="d-none d-lg-block w-30 rounded-5 mb-4 mb-lg-0 shadow-2"
             alt="woman avatar"
             
@@ -444,7 +444,7 @@ function App() {
           }}
         >
           <img
-            src="https://cdn.discordapp.com/attachments/617357614338015275/1250665443115532339/m200Hug.png?ex=666bc475&is=666a72f5&hm=6aa3def01d5a872c3bb0ff9d797ccdd8aea896aca69d5ce1c3f083c869b803ef&"
+            src="https://i.imgur.com/VuiSPoE.png"
             width="140"
           />
         </ParallaxLayer>
@@ -721,7 +721,7 @@ function App() {
           }}
         >
           <img
-            src="https://cdn.discordapp.com/attachments/617357614338015275/1250665443568386049/EvenCuterReimu.png?ex=666bc475&is=666a72f5&hm=a920c5d280d0aee2377d206a83723a57a845380a17e259a5378f2d7d7c93981a&"
+            src="https://i.imgur.com/NmTfo0S.png"
             width="170"
             className="me-5 p-3"
           />
@@ -735,7 +735,7 @@ function App() {
           }}
         >
           <img
-            src="https://cdn.discordapp.com/attachments/617357614338015275/1250665443920838706/CuteReimu.png?ex=666bc476&is=666a72f6&hm=bb9533dc8fceb289dcfd522dedd854fa1dbc0ac3509cb4e4c65b78f32e4ced33&"
+            src="https://i.imgur.com/ljvmPII.png"
             width="150"
           />
         </ParallaxLayer>
