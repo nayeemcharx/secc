@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
 import "bootstrap/dist/css/bootstrap.css";
@@ -28,15 +28,36 @@ import CharAvatar from "./avatars/Char.webp"
 
 import FlameScreenshot from "./screenshots/FlameScreenshot.png"
 import KaiyaScreenShot from "./screenshots/KaiyaScreenshot.png"
+
+import Stars from "./assets/stars.svg"
+import Cloud from "./assets/cloud.svg"
+
+import useWindowSize from "./hooks/useWindowSize";
+
+const getDeviceSize = (width) => {
+  if(width>2600) return 'are you kidding me?'
+  if(width>2200) return 'super duper extra large'
+  if(width>1800) return 'super extra large'
+  if(width>1400) return 'extra large'
+  if (width >= 1024) return 'large';
+  if (width >= 768) return 'medium';
+  return 'small';
+};
+
+
 function App() {
 
-  const url = (name, wrap = false) =>
-    `${
-      wrap ? "url(" : ""
-    }https://awv3node-homepage.surge.sh/build/assets/${name}.svg${
-      wrap ? ")" : ""
-    }`;
-  
+  const size = useWindowSize();
+  const [deviceSize, setDeviceSize] = useState(getDeviceSize(size.width));
+
+  useEffect(() => {
+    const newDeviceSize = getDeviceSize(size.width);
+    if (newDeviceSize !== deviceSize) {
+      
+      window.location.reload();
+    }
+  }, [size.width, deviceSize]);
+
   const src1 =LightBalloon;
   const src2 =GrayBalloon;
   const alignCenter = { display: "flex", alignItems: "center" };
@@ -80,55 +101,136 @@ function App() {
 
         <ParallaxLayer
           offset={0}
-          speed={0.15}
-          factor={8}
+          speed={.3}
+          factor={3}
           style={{
-            backgroundImage: url("stars", true),
+            backgroundImage: `url(${Stars})`,
             backgroundSize: "cover",
           }}
         />
         <ParallaxLayer
-          offset={5}
-          speed={0.15}
-          factor={8}
+          offset={2}
+          speed={.3}
+          factor={3}
           style={{
-            backgroundImage: url("stars", true),
+            backgroundImage: `url(${Stars})`,
+            backgroundSize: "cover",
+          }}
+        />
+        <ParallaxLayer
+          offset={4}
+          speed={.3}
+          factor={3}
+          style={{
+            backgroundImage: `url(${Stars})`,
+            backgroundSize: "cover",
+          }}
+        />
+        <ParallaxLayer
+          offset={6}
+          speed={.3}
+          factor={3}
+          style={{
+            backgroundImage: `url(${Stars})`,
+            backgroundSize: "cover",
+          }}
+        />
+        <ParallaxLayer
+          offset={8}
+          speed={.3}
+          factor={3}
+          style={{
+            backgroundImage: `url(${Stars})`,
             backgroundSize: "cover",
           }}
         />
         <ParallaxLayer
           offset={10}
-          speed={0.15}
-          factor={8}
+          speed={.3}
+          factor={3}
           style={{
-            backgroundImage: url("stars", true),
+            backgroundImage: `url(${Stars})`,
             backgroundSize: "cover",
           }}
         />
         <ParallaxLayer
-          offset={15}
-          speed={0.15}
-          factor={8}
+          offset={12}
+          speed={.3}
+          factor={3}
           style={{
-            backgroundImage: url("stars", true),
+            backgroundImage: `url(${Stars})`,
+            backgroundSize: "cover",
+          }}
+        />
+        <ParallaxLayer
+          offset={14}
+          speed={.3}
+          factor={3}
+          style={{
+            backgroundImage: `url(${Stars})`,
+            backgroundSize: "cover",
+          }}
+        />
+        <ParallaxLayer
+          offset={16}
+          speed={.3}
+          factor={3}
+          style={{
+            backgroundImage: `url(${Stars})`,
+            backgroundSize: "cover",
+          }}
+        />
+        <ParallaxLayer
+          offset={18}
+          speed={0.3}
+          factor={3}
+          style={{
+            backgroundImage: `url(${Stars})`,
             backgroundSize: "cover",
           }}
         />
         <ParallaxLayer
           offset={20}
-          speed={0.15}
-          factor={8}
+          speed={0.3}
+          factor={3}
           style={{
-            backgroundImage: url("stars", true),
+            backgroundImage: `url(${Stars})`,
             backgroundSize: "cover",
           }}
         />
         <ParallaxLayer
-          offset={25}
-          speed={0.15}
-          factor={8}
+          offset={22}
+          speed={0.3}
+          factor={3}
           style={{
-            backgroundImage: url("stars", true),
+            backgroundImage: `url(${Stars})`,
+            backgroundSize: "cover",
+          }}
+        />
+        <ParallaxLayer
+          offset={24}
+          speed={0.3}
+          factor={3}
+          style={{
+            backgroundImage: `url(${Stars})`,
+            backgroundSize: "cover",
+          }}
+        />
+        <ParallaxLayer
+          offset={26}
+          speed={0.3}
+          factor={3}
+          style={{
+            backgroundImage: `url(${Stars})`,
+            backgroundSize: "cover",
+          }}
+        />
+        <ParallaxLayer
+          offset={28}
+          speed={0.3}
+          factor={3}
+          style={{
+            backgroundImage: `url(${Stars})`,
             backgroundSize: "cover",
           }}
         />
@@ -138,88 +240,88 @@ function App() {
           style={{ justifyContent: "center", opacity: 0.4 }}
         >
           {" "}
-          <img src={url("cloud")} style={{ display: "block", width: "20%" }} />
-          <img src={url("cloud")} style={{ display: "block", width: "10%" }} />
+          <img src={Cloud} style={{ display: "block", width: "20%" }} />
+          <img src={Cloud} style={{ display: "block", width: "10%" }} />
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "20%", marginLeft: "55%" }}
           />
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "10%", marginLeft: "15%" }}
           />
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "20%", marginLeft: "70%" }}
           />
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "20%", marginLeft: "40%" }}
           />
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "10%", marginLeft: "10%" }}
           />
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "20%", marginLeft: "75%" }}
           />
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "20%", marginLeft: "60%" }}
           />
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "25%", marginLeft: "30%" }}
           />
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "10%", marginLeft: "80%" }}
           />
         </ParallaxLayer>
         <ParallaxLayer offset={21.6} speed={-0.1} style={{ opacity: 0.4 }}>
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "20%", marginLeft: "60%" }}
           />
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "25%", marginLeft: "30%" }}
           />
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "10%", marginLeft: "80%" }}
           />
         </ParallaxLayer>
         <ParallaxLayer offset={25.75} speed={0.5} style={{ opacity: 0.1 }}>
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "20%", marginLeft: "70%" }}
           />
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "20%", marginLeft: "40%" }}
           />
         </ParallaxLayer>
         <ParallaxLayer offset={2.6} speed={0.4} style={{ opacity: 0.6 }}>
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "20%", marginLeft: "5%" }}
           />
           <img
-            src={url("cloud")}
+            src={Cloud}
             style={{ display: "block", width: "15%", marginLeft: "75%" }}
           />
         </ParallaxLayer>
@@ -280,7 +382,6 @@ function App() {
           onClick={() => { window.location.href = "https://bit.ly/ubiburthday24" }}
           sticky={{ start: 7, end: 8 }}
           style={{ ...alignCenter, justifyContent: "flex-start" }}
-          clas
         >
           <Card
             message={"hehe hbd hehe..(btw this is not kaiya speaking but there is an easter egg here find it uwu)"}
